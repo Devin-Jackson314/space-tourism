@@ -33,14 +33,28 @@
     
     .desktopNav{
         position: relative;
-        display: block;
+        display: flex;
         right: 10px;
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(40.7742px);
+        width: 830px;
+        height: 96px;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        top: 20px;
        
     }
 
     a{
         color: #FFFFFF;
         text-decoration: none;
+    }
+
+    .logo{
+        position: relative;
+        top: 30px;
+        left: 40px;
     }
     
     
