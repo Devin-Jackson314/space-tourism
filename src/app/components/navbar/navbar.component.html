@@ -5,17 +5,27 @@
     </div>
 
     <div class="hamburger">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd" (click)="openNav()"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
     </div>
 
   <div class="desktopNav">
-        <a routerLink="/home">00&nbsp;Home</a>
+        <a routerLink="/home">00&nbsp;HOME</a>
         <a routerLink="/destination">01&nbsp;DESTINATION</a>
         <a routerLink="/crew">02&nbsp;CREW</a>
         <a routerLink="/technology">03&nbsp;TECHNOLOGY</a>
     </div>  
 
-    
+   <!-- <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+        <a routerLink="/home">Home</a>
+        <a routerLink="/destination">Destination</a>
+        <a routerLink="/crew">Crew</a>
+        <a routerLink="/technology">Technology</a>
+
+    </div> -->
+     
 </div>
+
+  
 
  

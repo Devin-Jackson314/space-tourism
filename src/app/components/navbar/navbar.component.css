@@ -23,6 +23,8 @@
          .desktopNav {
             display: none;
          }
+
+        
     
 }
 
@@ -57,5 +59,8 @@
         left: 40px;
     }
     
+    .sidenav{
+        display: none;
+    }
     
 }

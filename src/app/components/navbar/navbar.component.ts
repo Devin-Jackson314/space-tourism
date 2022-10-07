@@ -11,5 +11,17 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
+   
+ 
 
+  closeNav() {
+    document.getElementById("mySidenav")!.style.width = "0";
+    document.getElementById("hamburger")!.style.marginLeft = "0";
+  }
+  openNav() {
+    document.getElementById("mySidenav")!.style.width = "200px";
+    document.getElementById("hamburger")!.style.marginLeft = "350px";
+    
+  }
 }
+ 
