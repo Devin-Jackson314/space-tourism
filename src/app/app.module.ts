@@ -9,6 +9,7 @@ import { CrewComponent } from './components/crew/crew.component';
 import { TechnologyComponent } from './components/technology/technology.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/data.service';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DataService } from './services/data.service';
     HomeComponent,
     DestinationComponent,
     CrewComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

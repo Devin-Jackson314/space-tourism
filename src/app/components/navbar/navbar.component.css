@@ -1,0 +1,47 @@
+@media(min-width: 375px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .logo{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        left: 15px;
+        top: 10px;
+    }
+
+    .hamburger{
+        position: relative;
+        width: 24px;
+        height: 21px;
+        right: 25px;
+        top: 19px;
+    }
+         .desktopNav {
+            display: none;
+         }
+    
+}
+
+@media(min-width: 1440px){
+    .hamburger{
+        display: none;
+    }
+    
+    .desktopNav{
+        position: relative;
+        display: block;
+        right: 10px;
+       
+    }
+
+    a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    
+    
+}

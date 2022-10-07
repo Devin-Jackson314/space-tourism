@@ -1,0 +1,76 @@
+@media(min-width: 375px){
+.background {
+    position: relative;
+        background-image: url("../../../assets/home/background-home-mobile.jpg");
+        width: 375px;
+        height: 667px;
+    
+    }
+
+    .spaceTravel{
+        position: relative;
+        width: 217px;
+        height: 19px;
+        color: #D0D6F9;
+        font-family: 'Barlow Condensed';
+        left: 105px;
+        
+       
+        
+    }
+
+    .spaceDescrip{
+        position: relative;
+        font-family: 'Barlow';
+        font-weight: 400;
+        font-size: 15px;
+        color: #D0D6F9;
+        line-height: 25px;
+        text-align: center;
+        font-style: normal;
+        width: 327px;
+        height: 125px;
+        left: 25px;
+
+
+    }
+
+    h1{
+        font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 100px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .explore{
+        position: relative;
+        display: flex;
+        width: 150px;
+        height: 150px;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        left: 115px;
+        top: 80px;
+    }
+
+      
+
+}
+
+@media(min-width:1440px){
+    .background {
+            background-image: url("../../../assets/home/background-home-desktop.jpg");
+            width: 1440px;
+            height: 900px;
+        }
+
+       
+
+       
+
+}
