@@ -14,24 +14,24 @@ export class HomeComponent implements OnInit {
   constructor(private dataservice: DataService) { }
 
   ngOnInit(): void {
-    this.getMyData();
+    //this.getMyData();
   }
 
-   getMyData() {
-     return this.dataservice.getData().subscribe((data) => {
-      this.myData = data
+  // getMyData() {
+     //return this.dataservice.getData('destinations').subscribe((data) => {
+     // this.myData = data
       //console.log(data, "Here is your data");
-       console.log(this.myData.crew, "CREW");
-       sessionStorage.setItem('destinations', JSON.stringify(this.myData.destinations));
+       //console.log(this.myData);
+       //sessionStorage.setItem('destinations', JSON.stringify(this.myData.destinations));
        
-       console.log(sessionStorage, "session storage");
+      // console.log(sessionStorage, "session storage");
    
       
       
-    })
+    //})
   
   
 
-  }
+  //}
 
 }
