@@ -10,6 +10,9 @@ import { TechnologyComponent } from './components/technology/technology.componen
 import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/data.service';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PlanetsComponent } from './components/destination/planets/planets.component';
+import { CrewmembersComponent } from './components/crew/crewmembers/crewmembers.component';
+import { TechdisplayComponent } from './components/technology/techdisplay/techdisplay.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     DestinationComponent,
     CrewComponent,
     TechnologyComponent,
-    NavbarComponent
+    NavbarComponent,
+    PlanetsComponent,
+    CrewmembersComponent,
+    TechdisplayComponent
   ],
   imports: [
     BrowserModule,
