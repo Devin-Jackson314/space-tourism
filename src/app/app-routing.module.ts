@@ -1,16 +1,29 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CrewComponent } from './components/crew/crew.component';
+import { CrewmembersComponent } from './components/crew/crewmembers/crewmembers.component';
 import { DestinationComponent } from './components/destination/destination.component';
+import { PlanetsComponent } from './components/destination/planets/planets.component';
 import { HomeComponent } from './components/home/home.component';
+import { TechdisplayComponent } from './components/technology/techdisplay/techdisplay.component';
 import { TechnologyComponent } from './components/technology/technology.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: 'home', component: HomeComponent },
-  { path: 'destination', component: DestinationComponent },
-  { path: 'crew', component: CrewComponent },
-  { path: 'technology', component:TechnologyComponent}
+  {
+    path: 'destination', component: DestinationComponent, children: [
+    {path: ':name', component: PlanetsComponent}
+  ]},
+  {
+    path: 'crew', component: CrewComponent, children: [
+    {path: ':name', component: CrewmembersComponent}
+  ]},
+  {
+    path: 'technology', component: TechnologyComponent, children: [
+    {path: ':name', component: TechdisplayComponent}
+  ]},
+  {path: '*', component: HomeComponent}
   
 ];
 
