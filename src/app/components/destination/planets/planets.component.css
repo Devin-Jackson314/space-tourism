@@ -1,0 +1,144 @@
+@media(min-width: 375px){
+    .planets{
+            display: flex;
+                justify-content: center;
+               
+                gap: 26px;
+                color: #FFFFFF;
+                padding-left: 0px;
+              
+    }
+
+    .textbox{
+       display: flex;
+        color: #FFFFFF;
+        flex-direction: column;
+        align-items: center;
+        
+        
+       
+    }
+
+    ul{
+        list-style: none;
+    }
+
+   h4{
+    display: flex;
+    
+    font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        justify-content: center;
+   }
+
+   img{
+    width: 170px;
+        height: 170px;
+       padding: 0px;
+        margin-top: 14px;
+
+   }
+
+   .name{
+    border-bottom: 1px solid#ffffff;
+    font-family: 'Barlow Condensed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+   }
+   .planetName{
+    font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 64px;
+        text-align: center;
+        margin-top: 13px;
+   }
+
+   .textColor{
+   
+    color: #FFFFFF;
+    
+        mix-blend-mode: normal;
+        opacity: 0.25;
+        bottom: 16px;
+        margin-right: 16px;
+   }
+
+   .planetDescription{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #D0D6F9;
+    margin-top: 13px;
+
+   }
+
+   .container{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+   }
+
+   .stackedContainer{
+    display: flex;
+    margin-top: 32px;
+    flex-direction: column;
+    margin-top: 34px;
+   }
+
+   .planetDistanceContainer{
+    width: 216px;
+    text-align:center;
+   }
+
+   .planetTravelContainer{
+    margin-top: 32px;
+    height: 61px;
+    width: 223px;
+    text-align: center;
+   }
+
+   .planetDistance{
+    font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+   }
+
+   .planetDistanceHeader{
+    font-family: 'Barlow Condensed';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+         letter-spacing: 2.3625px;
+        text-transform: uppercase;
+        color: #D0D6F9;
+   }
+
+   .planetTravel{
+    font-family: 'Bellefair';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 32px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+   }
+}

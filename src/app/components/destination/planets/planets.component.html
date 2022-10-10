@@ -1,16 +1,31 @@
 <div class = "container">
 
     <div class="textbox">
+        <h4><p class="textColor">01.</p> PICK YOUR DESTINATION</h4>
+        <img src="./assets/destination/image-moon.webp" alt="">
+
          <ul class="planets">
 
-            <li *ngFor="let item of planetNames let i = index" >
-                <h2 class="name" [routerLink]="['/destination', item.name]">{{item.name}}</h2>
+            <li *ngFor="let item of planetNames let i = index" class="name" [routerLink]="['/destination', item.name]">{{item.name}}
+                
             </li>
 
          </ul>
-         <div>{{planet.name}}</div>
-         <div>{{planet.description}}</div>
-         <div>{{planet.distance}}</div>
-         <div>{{planet.trave1}}</div>
+         <div class="planetName">{{planet.name | uppercase}}</div>
+         <div class="descriptionContainer">
+            
+            <p class="planetDescription">{{planet.description}}</p>
+         </div>
+         <div class="stackedContainer">
+            <div class="planetDistanceContainer">
+                <p class="planetDistanceHeader">AVG. DISTANCE</p>
+                <p class="planetDistance">{{planet.distance}}<p>
+            </div>
+            <div class="planetTravelContainer">
+                <p class="planetDistanceHeader">EST. TRAVEL TIME</p>
+                <p class="planetTravel">{{planet.travel}}</p>
+            </div>
+         </div>
+        
     </div>
 </div>

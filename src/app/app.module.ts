@@ -13,6 +13,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { PlanetsComponent } from './components/destination/planets/planets.component';
 import { CrewmembersComponent } from './components/crew/crewmembers/crewmembers.component';
 import { TechdisplayComponent } from './components/technology/techdisplay/techdisplay.component';
+import { DataresolverService } from './services/dataresolver.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { TechdisplayComponent } from './components/technology/techdisplay/techdi
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [DataService],
+  providers: [DataService, DataresolverService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
