@@ -36,7 +36,7 @@ export class PlanetsComponent implements OnInit {
          console.log(this.myData[i].name.trim().toLowerCase(), this.name.name.trim().toLowerCase(), "checking");
          
          if (this.myData[i].name.trim().toLowerCase() == this.name.name.trim().toLowerCase()) {
-          //console.log(this.myData[i], " specific planet2")
+          console.log(this.myData[i], " specific planet2")
            this.planet = this.myData[i];
            break;
          }

@@ -18,11 +18,11 @@ const routes: Routes = [
   ]},
   {
     path: 'crew', component: CrewComponent, children: [
-    {path: ':name', component: CrewmembersComponent}
+    {path: ':name', component: CrewmembersComponent, resolve: {crewmembers: DataresolverService}}
   ]},
   {
     path: 'technology', component: TechnologyComponent, children: [
-    {path: ':name', component: TechdisplayComponent}
+    {path: ':name', component: TechdisplayComponent, resolve: {techoptions: DataresolverService}}
   ]},
   {path: '*', component: HomeComponent}
   

@@ -1,0 +1,13 @@
+@media(min-width: 375px){
+    .oval{
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #FFFFFF;
+    }
+
+    img{
+        width: 327px;
+        height: 223px;
+    }
+}
