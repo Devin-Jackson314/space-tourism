@@ -7,13 +7,14 @@ import { PlanetsComponent } from './components/destination/planets/planets.compo
 import { HomeComponent } from './components/home/home.component';
 import { TechdisplayComponent } from './components/technology/techdisplay/techdisplay.component';
 import { TechnologyComponent } from './components/technology/technology.component';
+import { DataresolverService } from './services/dataresolver.service';
 
 const routes: Routes = [
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: 'home', component: HomeComponent },
   {
     path: 'destination', component: DestinationComponent, children: [
-    {path: ':name', component: PlanetsComponent}
+      { path: ':name', component: PlanetsComponent, resolve: {planets: DataresolverService} }
   ]},
   {
     path: 'crew', component: CrewComponent, children: [

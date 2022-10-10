@@ -3,11 +3,14 @@
     <div class="textbox">
          <ul class="planets">
 
-            <li *ngFor="let item of myData" >
-                <h2 class="name">{{item.name}}</h2>
+            <li *ngFor="let item of planetNames let i = index" >
+                <h2 class="name" [routerLink]="['/destination', item.name]">{{item.name}}</h2>
             </li>
 
          </ul>
-
+         <div>{{planet.name}}</div>
+         <div>{{planet.description}}</div>
+         <div>{{planet.distance}}</div>
+         <div>{{planet.trave1}}</div>
     </div>
 </div>
