@@ -1,8 +1,21 @@
 <div class="container">
-    <div class="textbox">
-        <h4><p class="textColor">02</p>MEET YOUR CREW</h4>
-        <img src="./assets/crew/image-douglas-hurley.webp">
-        <div class="oval"></div>
-        
+  <div class="textbox">
+    <h4>
+      <p class="textColor">02</p>
+      MEET YOUR CREW
+    </h4>
+    <img src="{{ crewName.images.webp }}" alt="" />
+
+    <div class="info">
+      <div
+        *ngFor="let item of myData; let i = index"
+        class="oval"
+        [routerLink]="['/crew', item.name]"
+      ></div>
     </div>
+
+    <div>{{ crewName.role }}</div>
+    <div>{{ crewName.name }}</div>
+    <div>{{ crewName.bio }}</div>
+  </div>
 </div>
