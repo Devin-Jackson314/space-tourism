@@ -1,0 +1,90 @@
+@media (min-width: 375px) {
+  .container {
+    margin-top: 44px;
+  }
+  img {
+    width: 375px;
+    height: 170px;
+    margin-top: 29px;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0px;
+    gap: 16px;
+    margin-top: 31px;
+  }
+
+  .name {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border: #fff 1px solid;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .active {
+    color: #0b0d17;
+    background: #fff;
+  }
+  .textColor {
+    color: #ffffff;
+
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    bottom: 16px;
+    margin-right: 16px;
+  }
+
+  h4 {
+    display: flex;
+    font-family: "Barlow Condensed";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    justify-content: center;
+  }
+
+  .description {
+    font-family: "Barlow";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #d0d6f9;
+    margin-top: 16px;
+  }
+
+  .textbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 40px;
+  }
+
+  .techName {
+    font-family: "Bellefair";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    height: 28px;
+    margin-top: 39px;
+  }
+}

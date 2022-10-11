@@ -1,1 +1,23 @@
-<p>techdisplay works!</p>
+<div class="container">
+  <div class="textbox">
+    <h4>
+      <p class="textColor">03</p>
+      SPACE LAUNCH 101
+    </h4>
+    <img src="{{ tech.images.portrait }}" alt="" />
+
+    <ul class="techOptions">
+      <li
+        *ngFor="let item of techNames; let i = index"
+        class="name"
+        routerLinkActive="active"
+        [routerLink]="['/technology', item.name]"
+      >
+        {{ i + 1 }}
+      </li>
+    </ul>
+
+    <div class="techName">{{ tech.name | uppercase }}</div>
+    <div class="description">{{ tech.description }}</div>
+  </div>
+</div>
