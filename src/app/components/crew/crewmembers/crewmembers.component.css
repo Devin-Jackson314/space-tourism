@@ -25,6 +25,7 @@
   .info {
     display: flex;
     margin-top: 32px;
+    gap: 16px;
   }
 
   .textColor {

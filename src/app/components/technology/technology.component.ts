@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
@@ -8,8 +9,9 @@ import { DataService } from 'src/app/services/data.service';
 })
 export class TechnologyComponent implements OnInit {
   myData: any;
+ 
 
-  constructor(private dataservice: DataService) { }
+  constructor(private dataservice: DataService, private router: Router) { }
 
   ngOnInit(): void {
     this.getMyData();
@@ -17,6 +19,7 @@ export class TechnologyComponent implements OnInit {
   getMyData() {
     return this.dataservice.getData('technology').subscribe((data) => {
       this.myData = data;
+       this.router.navigate(['/technology', this.myData[0].name])
       console.log(this.myData);
     })
   }
