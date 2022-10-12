@@ -11,6 +11,7 @@
         *ngFor="let item of planetNames; let i = index"
         class="name"
         [routerLink]="['/destination', item.name]"
+        routerLinkActive="active"
       >
         {{ item.name }}
       </li>

@@ -39,13 +39,16 @@
   }
 
   .name {
-    border-bottom: 1px solid#ffffff;
     font-family: "Barlow Condensed";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 2.3625px;
+  }
+
+  .active {
+    border-bottom: 1px solid#ffffff;
   }
   .planetName {
     font-family: "Bellefair";
