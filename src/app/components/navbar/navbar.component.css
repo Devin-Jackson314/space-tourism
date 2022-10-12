@@ -1,66 +1,111 @@
-@media(min-width: 375px){
-    .navbar{
-        display: flex;
-        justify-content: space-between;
+@media (min-width: 375px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
 
-    }
+  .logo {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: 15px;
+    top: 10px;
+  }
 
-    .logo{
-        position: relative;
-        width: 40px;
-        height: 40px;
-        left: 15px;
-        top: 10px;
-    }
+  .hamburger {
+    position: relative;
+    width: 24px;
+    height: 21px;
+    right: 25px;
+    top: 19px;
+  }
+  .desktopNav {
+    display: none;
+  }
 
-    .hamburger{
-        position: relative;
-        width: 24px;
-        height: 21px;
-        right: 25px;
-        top: 19px;
-    }
-         .desktopNav {
-            display: none;
-         }
+  .sidenav {
+    display: none;
+    height: 100vh;
 
-        
-    
+    position: fixed;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    z-index: 20;
+  }
+  .toggle {
+    font-size: 16px;
+    width: 254px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 32px;
+    letter-spacing: 2.7px;
+    line-height: 19px;
+  }
+
+  .link {
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "Barlow Condensed";
+    line-height: 19px;
+    letter-spacing: 2.7px;
+    display: flex;
+    color: #ffffff;
+    text-decoration: none;
+    margin-bottom: 32px;
+  }
+
+  .home {
+    margin-top: 65px;
+  }
+
+  .link p {
+    font-weight: 700;
+    margin-right: 11px;
+    margin-left: 32px;
+  }
+
+  .closeButton {
+    position: relative;
+    height: 19px;
+    width: 19px;
+    align-self: flex-end;
+    margin-right: 27px;
+    margin-top: 34px;
+  }
 }
 
-@media(min-width: 1440px){
-    .hamburger{
-        display: none;
-    }
-    
-    .desktopNav{
-        position: relative;
-        display: flex;
-        right: 10px;
-        background: rgba(255, 255, 255, 0.04);
-        backdrop-filter: blur(40.7742px);
-        width: 830px;
-        height: 96px;
-        justify-content: center;
-        align-items: center;
-        justify-content: space-between;
-        top: 20px;
-       
-    }
+@media (min-width: 1440px) {
+  .hamburger {
+    display: none;
+  }
 
-    a{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
+  .desktopNav {
+    position: relative;
+    display: flex;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.7742px);
+    width: 830px;
+    height: 96px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    top: 20px;
+  }
 
-    .logo{
-        position: relative;
-        top: 30px;
-        left: 40px;
-    }
-    
-    .sidenav{
-        display: none;
-    }
-    
+  a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .logo {
+    position: relative;
+    top: 30px;
+    left: 40px;
+  }
+
+  .sidenav {
+    display: none;
+  }
 }

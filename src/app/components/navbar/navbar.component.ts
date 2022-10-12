@@ -14,8 +14,9 @@ export class NavbarComponent implements OnInit {
    
  
 
-  closeNav() {
-    document.getElementById("mySidenav")!.style.width = "0";
+  toggleNav() {
+    document.getElementById("mySidenav")?.classList.toggle('toggle');
+    // document.getElementById("mySidenav")!.style.width = "0";
     document.getElementById("hamburger")!.style.marginLeft = "0";
   }
   openNav() {

@@ -1,31 +1,54 @@
 <div class="navbar">
-    
-    <div class="logo">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"><g fill="none" fill-rule="evenodd"><circle cx="24" cy="24" r="24" fill="#FFF"/><path fill="#0B0D17" d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"/></g></svg>
-    </div>
+  <div class="logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+      <g fill="none" fill-rule="evenodd">
+        <circle cx="24" cy="24" r="24" fill="#FFF" />
+        <path
+          fill="#0B0D17"
+          d="M24 0c0 16-8 24-24 24 15.718.114 23.718 8.114 24 24 0-16 8-24 24-24-16 0-24-8-24-24z"
+        />
+      </g>
+    </svg>
+  </div>
 
-    <div class="hamburger">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21"><g fill="#D0D6F9" fill-rule="evenodd" (click)="openNav()"><path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z"/></g></svg>
-    </div>
+  <div class="hamburger" (click)="toggleNav()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="21">
+      <g fill="#D0D6F9" fill-rule="evenodd">
+        <path d="M0 0h24v3H0zM0 9h24v3H0zM0 18h24v3H0z" />
+      </g>
+    </svg>
+  </div>
 
   <div class="desktopNav">
-        <a routerLink="/home">00&nbsp;HOME</a>
-        <a routerLink="/destination">01&nbsp;DESTINATION</a>
-        <a routerLink="/crew">02&nbsp;CREW</a>
-        <a routerLink="/technology">03&nbsp;TECHNOLOGY</a>
-    </div>  
+    <a routerLink="/home">00&nbsp;HOME</a>
+    <a routerLink="/destination">01&nbsp;DESTINATION</a>
+    <a routerLink="/crew">02&nbsp;CREW</a>
+    <a routerLink="/technology">03&nbsp;TECHNOLOGY</a>
+  </div>
 
-   <!-- <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
-        <a routerLink="/home">Home</a>
-        <a routerLink="/destination">Destination</a>
-        <a routerLink="/crew">Crew</a>
-        <a routerLink="/technology">Technology</a>
-
-    </div> -->
-     
+  <div id="mySidenav" class="sidenav">
+    <img
+      class="closeButton"
+      src="../../../assets/shared/icon-close.svg"
+      alt="close menu button"
+      (click)="toggleNav()"
+    />
+    <!-- (click)="toggleNav()" -->
+    <a class="link home" routerLink="/home"
+      ><p>00</p>
+      Home</a
+    >
+    <a class="link" routerLink="/destination"
+      ><p>01</p>
+      Destination</a
+    >
+    <a class="link" routerLink="/crew"
+      ><p>02</p>
+      Crew</a
+    >
+    <a class="link" routerLink="/technology"
+      ><p>03</p>
+      Technology</a
+    >
+  </div>
 </div>
-
-  
-
- 
