@@ -118,7 +118,7 @@
   }
 
   .techName {
-    margin-top: -526px;
+    margin-top: -624px;
     font-family: Bellefair;
     font-size: 56px;
     font-weight: 400;
@@ -139,5 +139,10 @@
     height: 192px;
     margin-left: -305px;
     margin-top: 53px;
+  }
+
+  .name {
+    width: 80px;
+    height: 80px;
   }
 }
